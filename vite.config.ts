@@ -13,10 +13,10 @@ export default defineConfig(() => {
     build: {
       rollupOptions: {
         input: {
-          main: path.resolve(__dirname, 'index.html'),
-          about: path.resolve(__dirname, 'about.html'),
-          menu: path.resolve(__dirname, 'menu.html'),
-          contact: path.resolve(__dirname, 'contact.html'),
+          main: path.resolve(import.meta.dirname || '', 'index.html'),
+          about: path.resolve(import.meta.dirname || '', 'about.html'),
+          menu: path.resolve(import.meta.dirname || '', 'menu.html'),
+          contact: path.resolve(import.meta.dirname || '', 'contact.html'),
         },
       },
     },
