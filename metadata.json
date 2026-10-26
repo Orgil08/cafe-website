@@ -1,0 +1,6 @@
+{
+  "name": "Aura Artisan Café",
+  "description": "A modern, warm, and welcoming artisan café website featuring handcrafted coffee, farm-to-table breakfast, lunch, and desserts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

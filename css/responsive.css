@@ -1,0 +1,290 @@
+/* ==========================================================================
+   Aura Artisan Café — Responsive Stylesheet
+   Breakpoints:
+   - Extra Large / Desktop: 1200px+
+   - Laptop / Tablet Landscape: 992px - 1199px
+   - Tablet Portrait: 768px - 991px
+   - Mobile: < 768px (tested at 390px)
+   ========================================================================== */
+
+/* Tablet & Smaller Screens (< 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 72px;
+  }
+
+  .hero-title {
+    font-size: 2.85rem;
+  }
+
+  .hero-grid {
+    gap: 2.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .atmosphere-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-masonry,
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+
+  .promo-banner-card {
+    grid-template-columns: 1fr;
+    padding: 2.5rem;
+    gap: 2rem;
+  }
+
+  .story-split {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .story-image-mosaic {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile & Small Tablets (< 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 64px;
+  }
+
+  /* Navigation reflow */
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-actions .btn {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: flex;
+  }
+
+  .mobile-drawer {
+    display: block;
+  }
+
+  /* Hero adjustments */
+  .hero-section {
+    padding: 3rem 0 4rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-eyebrow {
+    justify-content: center;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero-stats {
+    justify-content: center;
+    gap: 1.75rem;
+  }
+
+  .stat-number {
+    font-size: 1.45rem;
+  }
+
+  .hero-floating-card {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .hero-image {
+    height: 320px;
+  }
+
+  /* Section headers */
+  .section-py {
+    padding: 3.5rem 0;
+  }
+
+  .section-title {
+    font-size: 1.95rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  /* Grids to single column */
+  .features-grid,
+  .menu-grid,
+  .values-grid,
+  .atmosphere-grid,
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .gallery-masonry,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .gallery-item {
+    height: 260px;
+  }
+
+  .lightbox-content {
+    max-height: 96vh;
+  }
+
+  .lightbox-img-wrap {
+    max-height: 52vh;
+  }
+
+  .lightbox-caption-box {
+    padding: 1rem 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  /* Promo adjustments */
+  .promo-perks {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  /* Contact page */
+  .contact-card-box {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .info-block {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Order Tray */
+  .order-tray-bar {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 0.65rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .tray-total-price {
+    font-size: 1.1rem;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  /* Back to top */
+  .back-to-top {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* Extra Small Phones (< 420px, like 390px) */
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 1.95rem;
+  }
+
+  .category-tabs {
+    gap: 0.5rem;
+  }
+
+  .tab-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+/* Accessibility: Respect Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal-section {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

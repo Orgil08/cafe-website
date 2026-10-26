@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Location — Aura Artisan Café</title>
+    <meta
+      name="description"
+      content="Get in touch with Aura Artisan Café. Find our location on Peace Avenue, view our opening hours, inquire about table reservations, or send us a friendly message."
+    />
+    <meta property="og:title" content="Contact & Location — Aura Artisan Café" />
+    <meta
+      property="og:description"
+      content="Find our location, check our business hours, and connect with our team."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Site Header & Shared Navigation -->
+    <header class="site-header" role="banner">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-logo" aria-label="Aura Artisan Café Homepage">
+          <div class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <div>
+            Aura
+            <span class="brand-tag">Artisan Café</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="menu.html" class="nav-link">Menu</a>
+          <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <a href="menu.html" class="btn btn-sm btn-primary">Order Preview</a>
+          <button
+            class="mobile-nav-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-navigation-drawer"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div
+      id="mobile-navigation-drawer"
+      class="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile Navigation"
+    >
+      <div class="mobile-drawer-content">
+        <div class="drawer-header">
+          <div class="brand-logo">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              </svg>
+            </div>
+            <span>Aura Café</span>
+          </div>
+          <button class="drawer-close" aria-label="Close navigation menu">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="mobile-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <div class="drawer-footer">
+          <p>📍 Peace Avenue 42, Sukhbaatar District</p>
+          <p>📞 +976 7700-2233 [Sample]</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+      <!-- Contact Page Hero -->
+      <section class="about-hero" aria-labelledby="contact-heading">
+        <div class="container">
+          <span class="section-tag">We'd Love to Hear From You</span>
+          <h1 id="contact-heading" class="section-title" style="font-size: 3.2rem; margin-bottom: 1.25rem;">
+            Contact & Visit Us
+          </h1>
+          <p class="section-subtitle" style="font-size: 1.15rem; max-width: 680px;">
+            Whether you are booking a quiet work session, planning a group brunch, or asking about our single-origin roasts, our baristas are here for you.
+          </p>
+        </div>
+      </section>
+
+      <!-- Main Contact Section: Form + Information Sidebar -->
+      <section class="section-py" aria-labelledby="form-section-heading">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Left Column: Form -->
+            <div class="contact-card-box">
+              <h2 id="form-section-heading" style="font-family: var(--font-serif); font-size: 1.75rem; color: var(--color-espresso); margin-bottom: 0.5rem;">
+                Send Us a Message
+              </h2>
+              <p style="color: var(--color-text-muted); font-size: 0.95rem; margin-bottom: 2rem;">
+                Fill out the form below. We usually respond within a few business hours.
+              </p>
+
+              <!-- Success Alert Box -->
+              <div id="form-success-alert" class="alert-box alert-success" role="status" aria-live="polite">
+                <!-- Injected via js/contact.js -->
+              </div>
+
+              <!-- General Error Alert Box -->
+              <div id="form-error-alert" class="alert-box alert-error" role="alert">
+                <!-- Injected via js/contact.js -->
+              </div>
+
+              <form id="cafe-contact-form" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="contact-name" class="form-label">
+                    <span>Full Name</span>
+                    <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="e.g. Nomin Batbayar"
+                    required
+                    aria-describedby="name-error"
+                  />
+                  <span id="name-error" class="error-message" role="alert">
+                    Please enter your name (at least 2 characters).
+                  </span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="contact-email" class="form-label">
+                    <span>Email Address</span>
+                    <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="e.g. nomin@example.com"
+                    required
+                    aria-describedby="email-error"
+                  />
+                  <span id="email-error" class="error-message" role="alert">
+                    Please provide a valid email address (e.g. name@example.com).
+                  </span>
+                </div>
+
+                <!-- Optional Subject / Inquiry Type -->
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">
+                    <span>Topic / Inquiry Type</span>
+                    <span style="font-size: 0.8rem; font-weight: normal; color: var(--color-text-light);">(Optional)</span>
+                  </label>
+                  <select id="contact-subject" name="subject" class="form-select">
+                    <option value="general">General Inquiries & Feedback</option>
+                    <option value="reservation">Table & Study Booth Reservation</option>
+                    <option value="catering">Corporate Coffee Catering</option>
+                    <option value="dietary">Dietary & Allergen Questions</option>
+                    <option value="press">Partnerships & Community Events</option>
+                  </select>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">
+                    <span>Your Message</span>
+                    <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    rows="5"
+                    class="form-textarea"
+                    placeholder="How can we help you? Feel free to mention preferred dates, party size, or questions."
+                    required
+                    aria-describedby="message-error"
+                  ></textarea>
+                  <span id="message-error" class="error-message" role="alert">
+                    Please write a message with at least 10 characters.
+                  </span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 0.95rem 1.5rem;">
+                  Send Message
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+
+                <p style="font-size: 0.78rem; color: var(--color-text-light); margin-top: 1rem; text-align: center;">
+                  🔒 We respect your privacy. In this prototype, data validation runs client-side without persistent storage.
+                </p>
+              </form>
+            </div>
+
+            <!-- Right Column: Sidebar (Location, Live Hours, Socials) -->
+            <div class="info-sidebar">
+              <!-- Live Hours Block -->
+              <div class="info-block">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem; flex-wrap: wrap; gap: 0.5rem;">
+                  <h3 class="info-block-title" style="margin-bottom: 0;">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                    Business Hours
+                  </h3>
+                  <!-- Live indicator pill calculated by js/contact.js -->
+                  <div id="live-status-pill" class="live-status-pill open" role="status">
+                    <span class="status-dot"></span>
+                    <span id="live-status-text">Checking hours...</span>
+                  </div>
+                </div>
+
+                <table class="hours-table" aria-label="Weekly Operating Schedule">
+                  <tbody>
+                    <tr data-day="1">
+                      <td>Monday</td>
+                      <td>07:30 – 20:30</td>
+                    </tr>
+                    <tr data-day="2">
+                      <td>Tuesday</td>
+                      <td>07:30 – 20:30</td>
+                    </tr>
+                    <tr data-day="3">
+                      <td>Wednesday</td>
+                      <td>07:30 – 20:30</td>
+                    </tr>
+                    <tr data-day="4">
+                      <td>Thursday</td>
+                      <td>07:30 – 20:30</td>
+                    </tr>
+                    <tr data-day="5">
+                      <td>Friday</td>
+                      <td>07:30 – 21:30</td>
+                    </tr>
+                    <tr data-day="6">
+                      <td>Saturday</td>
+                      <td>08:30 – 21:30</td>
+                    </tr>
+                    <tr data-day="0">
+                      <td>Sunday</td>
+                      <td>09:00 – 19:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Contact Coordinates Block -->
+              <div class="info-block">
+                <h3 class="info-block-title">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  Location & Contact
+                </h3>
+
+                <ul class="info-list">
+                  <li class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                      <h4>Café Address</h4>
+                      <p>
+                        Peace Avenue 42, 1st Khoroo<br />
+                        Sukhbaatar District, Ulaanbaatar<br />
+                        <span style="font-size: 0.78rem; color: var(--color-green-primary); font-weight: 600;">[Editable Sample Location]</span>
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-text">
+                      <h4>Phone Number</h4>
+                      <p>
+                        <a href="tel:+97677002233">+976 7700-2233</a><br />
+                        <span style="font-size: 0.78rem; color: var(--color-text-light);">Direct Barista Line [Sample]</span>
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-text">
+                      <h4>Email Inquiries</h4>
+                      <p>
+                        <a href="mailto:hello@auracafe.sample">hello@auracafe.sample</a><br />
+                        <span style="font-size: 0.78rem; color: var(--color-text-light);">General & reservations [Sample]</span>
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+
+                <div style="margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--color-cream-border);">
+                  <h4 style="font-size: 0.88rem; font-weight: 700; color: var(--color-espresso); margin-bottom: 0.75rem;">
+                    Official Social Channels
+                  </h4>
+                  <div class="social-links">
+                    <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      </svg>
+                    </a>
+                    <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                      </svg>
+                    </a>
+                    <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Map Section (Interactive Styled Vector Map Placeholder) -->
+      <section class="section-py" style="background-color: var(--color-cream-warm); padding-top: 3.5rem;" aria-labelledby="map-heading">
+        <div class="container">
+          <div class="section-header text-center" style="margin-bottom: 2rem;">
+            <span class="section-tag">Interactive Map</span>
+            <h2 id="map-heading" class="section-title">How to Find Us</h2>
+            <p class="section-subtitle">
+              Located directly off Peace Avenue, just a 3-minute stroll from the central plaza and bus terminal.
+            </p>
+          </div>
+
+          <div class="map-container" role="region" aria-label="Café Location Map">
+            <!-- Stylized Vector Map Illustration -->
+            <svg class="interactive-map-svg" viewBox="0 0 900 360" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <pattern id="grid-pattern" width="40" height="40" patternUnits="userSpaceOnUse">
+                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ded4c5" stroke-width="1"></path>
+                </pattern>
+              </defs>
+              <!-- Base background -->
+              <rect width="100%" height="100%" fill="#efe5d5"></rect>
+              <rect width="100%" height="100%" fill="url(#grid-pattern)"></rect>
+
+              <!-- Park / Greenery zone -->
+              <path d="M 50,20 Q 200,80 320,30 L 380,180 Q 220,160 80,240 Z" fill="#d9e6d8" opacity="0.8"></path>
+              <text x="140" y="110" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" fill="#527357" font-weight="600">Central Park Greens</text>
+
+              <!-- Streets -->
+              <!-- Main Avenue: Peace Ave -->
+              <line x1="0" y1="200" x2="900" y2="200" stroke="#ffffff" stroke-width="28"></line>
+              <line x1="0" y1="200" x2="900" y2="200" stroke="#d5c8b5" stroke-width="2" stroke-dasharray="8 6"></line>
+              <text x="180" y="194" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" fill="#6d5849" font-weight="700" letter-spacing="1">PEACE AVENUE (ENKHTAIVAN AVE)</text>
+
+              <!-- Cross streets -->
+              <line x1="450" y1="0" x2="450" y2="360" stroke="#ffffff" stroke-width="20"></line>
+              <line x1="720" y1="0" x2="720" y2="360" stroke="#ffffff" stroke-width="16"></line>
+              <text x="460" y="60" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" fill="#887667" font-weight="600">Sukhbaatar St.</text>
+
+              <!-- Buildings -->
+              <rect x="360" y="80" width="70" height="80" rx="4" fill="#dfd3c3"></rect>
+              <rect x="470" y="80" width="110" height="90" rx="4" fill="#dfd3c3"></rect>
+              <rect x="470" y="230" width="120" height="85" rx="4" fill="#dfd3c3"></rect>
+              <rect x="340" y="230" width="90" height="90" rx="4" fill="#dfd3c3"></rect>
+
+              <!-- Café Building Highlight -->
+              <rect x="470" y="130" width="90" height="50" rx="6" fill="#24140e"></rect>
+              <text x="480" y="160" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" fill="#fbf8f3" font-weight="700">AURA CAFÉ</text>
+
+              <!-- Pin Marker with pulse ring -->
+              <circle cx="515" cy="115" r="24" fill="rgba(52, 92, 63, 0.25)"></circle>
+              <circle cx="515" cy="115" r="16" fill="rgba(52, 92, 63, 0.4)"></circle>
+              <circle cx="515" cy="115" r="8" fill="#23422c"></circle>
+              <circle cx="515" cy="115" r="3" fill="#ffffff"></circle>
+            </svg>
+
+            <!-- Map Floating Card -->
+            <div class="map-card-overlay">
+              <h5>Aura Artisan Café</h5>
+              <p>Peace Avenue 42, Sukhbaatar District</p>
+              <div style="margin-top: 0.5rem; display: flex; gap: 0.5rem;">
+                <span class="badge badge-green" style="font-size: 0.7rem;">Free Parking Behind Building</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Frequently Asked Questions Accordion -->
+      <section class="section-py" aria-labelledby="faq-heading">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-tag">Frequently Asked</span>
+            <h2 id="faq-heading" class="section-title">Common Questions</h2>
+            <p class="section-subtitle">
+              Everything you need to know about visiting, working, and dining at Aura.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is high-speed Wi-Fi available for students and remote workers?</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes! We provide complimentary fiber-optic Wi-Fi (300Mbps) with no time limit or purchase barrier. Power sockets are installed beside almost every seat, especially along our second-floor study mezzanine.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Can I make table reservations for groups or study sessions?</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  We accept reservations for parties of 4 or more, as well as our private 8-person meeting nook. Simply reach out via our contact form or phone call at least 24 hours in advance.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Do you have dairy alternatives and vegan food options?</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Absolutely. We offer organic Oatly oat milk, almond milk, and soy milk for all espresso and tea beverages (+₮1,500). Our menu clearly labels vegan and vegetarian items, including our Harvest Quinoa salad, avocado sourdough, and pumpkin soup.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question" aria-expanded="false">
+                <span>Is parking available nearby?</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer">
+                <p>
+                  Yes. Dedicated customer parking is available directly behind our building off Sukhbaatar Street (free for up to 2 hours with any café order). Bicycle racks are also installed right by the front entrance.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top of page">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="brand-logo">
+              <div class="brand-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                </svg>
+              </div>
+              <div>
+                Aura
+                <span class="brand-tag">Artisan Café</span>
+              </div>
+            </a>
+            <p>
+              Honest coffee, seasonal nourishment, and a peaceful community atmosphere in the heart of the city.
+            </p>
+            <div class="social-links" aria-label="Social Media Links">
+              <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                </svg>
+              </a>
+              <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Our Café</a></li>
+              <li><a href="menu.html">Full Menu & Pricing</a></li>
+              <li><a href="contact.html">Contact & Location</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Opening Hours</h4>
+            <ul class="footer-hours-list">
+              <li><strong>Mon – Thu:</strong> 07:30 – 20:30</li>
+              <li><strong>Friday:</strong> 07:30 – 21:30</li>
+              <li><strong>Saturday:</strong> 08:30 – 21:30</li>
+              <li><strong>Sunday:</strong> 09:00 – 19:00</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-col-title">Visit Us</h4>
+            <p style="font-size: 0.88rem; line-height: 1.5; color: #bfada0; margin-bottom: 0.75rem;">
+              📍 Peace Avenue 42, Sukhbaatar District<br />
+              Ulaanbaatar, Mongolia (Sample Location)
+            </p>
+            <p style="font-size: 0.88rem; color: #bfada0; margin-bottom: 0.5rem;">
+              📞 +976 7700-2233 [Sample]
+            </p>
+            <p style="font-size: 0.88rem; color: #bfada0;">
+              ✉️ hello@auracafe.sample
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© <span id="current-year">2026</span> Aura Artisan Café. All rights reserved.</p>
+          <p class="footer-disclaimer">
+            * Demonstration website with editable sample data developed to specification.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="/js/main.js"></script>
+    <script type="module" src="/js/contact.js"></script>
+  </body>
+</html>

@@ -1,0 +1,942 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aura Artisan Café — Handcrafted Coffee & Fresh Daily Bites</title>
+    <meta
+      name="description"
+      content="Welcome to Aura Artisan Café. Experience specialty single-origin coffee, wholesome seasonal breakfasts, artisan lunches, and freshly baked pastries in a warm, welcoming space."
+    />
+    <meta property="og:title" content="Aura Artisan Café — Handcrafted Coffee & Fresh Daily Bites" />
+    <meta
+      property="og:description"
+      content="A modern artisan café featuring specialty coffee, farm-to-table breakfast, lunch, and desserts."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Site Header & Shared Navigation -->
+    <header class="site-header" role="banner">
+      <div class="container nav-container">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Aura Artisan Café Homepage">
+          <div class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+              <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              <line x1="6" y1="1" x2="6" y2="4"></line>
+              <line x1="10" y1="1" x2="10" y2="4"></line>
+              <line x1="14" y1="1" x2="14" y2="4"></line>
+            </svg>
+          </div>
+          <div>
+            Aura
+            <span class="brand-tag">Artisan Café</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="nav-menu" role="navigation" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+          <a href="about.html" class="nav-link">About</a>
+          <a href="menu.html" class="nav-link">Menu</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- CTA & Mobile Trigger -->
+        <div class="nav-actions">
+          <a href="menu.html" class="btn btn-sm btn-primary">Order Preview</a>
+          <button
+            class="mobile-nav-toggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-navigation-drawer"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div
+      id="mobile-navigation-drawer"
+      class="mobile-drawer"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Mobile Navigation"
+    >
+      <div class="mobile-drawer-content">
+        <div class="drawer-header">
+          <div class="brand-logo">
+            <div class="brand-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+              </svg>
+            </div>
+            <span>Aura Café</span>
+          </div>
+          <button class="drawer-close" aria-label="Close navigation menu">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="mobile-nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="drawer-footer">
+          <p>📍 Peace Avenue 42, Sukhbaatar District</p>
+          <p>📞 +976 7700-2233 [Sample]</p>
+          <div style="margin-top: 1.25rem;">
+            <a href="menu.html" class="btn btn-green" style="width: 100%;">View Full Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero-section reveal-section" aria-labelledby="hero-heading">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Text Column -->
+            <div class="hero-content">
+              <div class="hero-eyebrow">
+                <span class="badge badge-green">Locally Roasted</span>
+                <span>Crafted Daily With Care</span>
+              </div>
+              <h1 id="hero-heading" class="hero-title">
+                Crafted with Heart, <em>Brewed with Purpose.</em>
+              </h1>
+              <p class="hero-description">
+                Welcome to Aura Café. We bring together ethically sourced single-origin coffee, wholesome seasonal brunches, and freshly baked sourdough pastries in a serene, sunlit sanctuary made for students, professionals, and neighbors.
+              </p>
+              <div class="hero-actions">
+                <a href="menu.html" class="btn btn-primary" id="hero-menu-cta">
+                  Explore Our Menu
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a href="contact.html" class="btn btn-secondary">
+                  Contact Us
+                </a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">Direct-Trade Beans</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">6:30 AM</span>
+                  <span class="stat-label">Daily Fresh Bake</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">4.9 <svg style="display:inline-block; vertical-align:-2px; color:#c99757; width:20px; height:20px;" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></span>
+                  <span class="stat-label">Loved by Community</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Visual Column -->
+            <div class="hero-visual">
+              <div class="hero-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1000&q=80"
+                  alt="Cozy interior of Aura Café with warm wooden tables, barista espresso station, and potted greenery"
+                  class="hero-image"
+                />
+              </div>
+              <div class="hero-floating-card">
+                <div class="floating-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path>
+                  </svg>
+                </div>
+                <div class="floating-text">
+                  <h4>Signature Roast</h4>
+                  <p>Honey Oat Latte freshly prepared with wild highland honey.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Takeaway Order Tracking Widget -->
+      <section id="order-tracker-section" class="order-tracker-section reveal-section" aria-labelledby="tracker-heading">
+        <div class="container">
+          <div class="tracker-card">
+            <div class="tracker-header">
+              <div class="tracker-badge-row">
+                <span class="badge badge-green">
+                  <span class="live-dot" aria-hidden="true"></span>
+                  Live Pickup Status
+                </span>
+                <span class="tracker-pill-text">Takeaway & Express Bar</span>
+              </div>
+              <h2 id="tracker-heading" class="tracker-title">Track Your Takeaway Order</h2>
+              <p class="tracker-subtitle">
+                Ordered coffee or bakery items to go? Enter your receipt ID below to check real-time preparation status and pickup readiness at our brew bar.
+              </p>
+            </div>
+
+            <!-- Tracker Form -->
+            <form id="order-tracker-form" class="tracker-form" novalidate>
+              <div class="tracker-input-wrapper">
+                <span class="tracker-input-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"></path>
+                    <path d="M14 8H8"></path>
+                    <path d="M16 12H8"></path>
+                    <path d="M13 16H8"></path>
+                  </svg>
+                </span>
+                <input
+                  type="text"
+                  id="receipt-id-input"
+                  name="receiptId"
+                  class="tracker-input"
+                  placeholder="Enter Receipt ID (e.g. #AURA-1042 or 1042)"
+                  autocomplete="off"
+                  autocapitalize="characters"
+                  spellcheck="false"
+                  aria-label="Receipt or Order ID"
+                  required
+                />
+                <button
+                  type="button"
+                  id="tracker-clear-btn"
+                  class="tracker-clear-btn"
+                  aria-label="Clear receipt input"
+                  style="display: none;"
+                >
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+                <button type="submit" id="tracker-submit-btn" class="btn btn-primary tracker-submit-btn">
+                  <span>Check Status</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Quick Sample Pill Buttons -->
+              <div class="tracker-samples-row" aria-label="Sample Receipt IDs to test">
+                <span class="tracker-samples-label">Try test samples:</span>
+                <button type="button" class="sample-receipt-pill" data-receipt="AURA-1042" aria-label="Test sample order AURA-1042">
+                  <span class="pill-dot ready"></span> #AURA-1042 (Ready for Pickup)
+                </button>
+                <button type="button" class="sample-receipt-pill" data-receipt="AURA-1043" aria-label="Test sample order AURA-1043">
+                  <span class="pill-dot preparing"></span> #AURA-1043 (Preparing)
+                </button>
+                <button type="button" class="sample-receipt-pill" data-receipt="AURA-1041" aria-label="Test sample order AURA-1041">
+                  <span class="pill-dot completed"></span> #AURA-1041 (Completed)
+                </button>
+              </div>
+            </form>
+
+            <!-- Results Output Region -->
+            <div id="tracker-result-region" class="tracker-result-region" aria-live="polite" aria-atomic="true">
+              <!-- Default Idle State -->
+              <div class="tracker-idle-state" id="tracker-idle-view">
+                <div class="idle-icon-wrap" aria-hidden="true">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                  </svg>
+                </div>
+                <div class="idle-text">
+                  <p class="idle-heading">Fast Takeaway Pickup</p>
+                  <p class="idle-desc">Your receipt number is printed at the top of your paper ticket or shown on your digital confirmation screen.</p>
+                </div>
+              </div>
+
+              <!-- Active Status State (Populated via JS) -->
+              <div class="tracker-active-state" id="tracker-active-view" style="display: none;"></div>
+
+              <!-- Error State (Populated via JS) -->
+              <div class="tracker-error-state" id="tracker-error-view" style="display: none;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Three Pillars Section (Coffee Quality, Fresh Ingredients, Welcoming Atmosphere) -->
+      <section class="section-py pillars-section reveal-section" aria-labelledby="pillars-heading">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-tag">Our Standards</span>
+            <h2 id="pillars-heading" class="section-title">The Aura Difference</h2>
+            <p class="section-subtitle">
+              From the farmer who tends the coffee cherries to the peaceful nook where you finish your reading, every detail is considered.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <!-- Feature 1: Coffee Quality -->
+            <article class="feature-card">
+              <div class="feature-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                  <line x1="6" y1="1" x2="6" y2="4"></line>
+                  <line x1="10" y1="1" x2="10" y2="4"></line>
+                  <line x1="14" y1="1" x2="14" y2="4"></line>
+                </svg>
+              </div>
+              <h3>Specialty Coffee Quality</h3>
+              <p>
+                We roast small batches weekly from certified direct-trade estates in Colombia, Ethiopia, and Guatemala. Dialed in every morning for sweet balance and vibrant clarity.
+              </p>
+            </article>
+
+            <!-- Feature 2: Fresh Ingredients -->
+            <article class="feature-card">
+              <div class="feature-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
+                  <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
+                </svg>
+              </div>
+              <h3>Farm-Fresh Ingredients</h3>
+              <p>
+                Our breads, dairy, organic eggs, and seasonal produce are sourced from trusted local farmers and bakeries. No preservatives, artificial syrups, or premade mixes.
+              </p>
+            </article>
+
+            <!-- Feature 3: Welcoming Atmosphere -->
+            <article class="feature-card">
+              <div class="feature-icon-box">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <h3>Welcoming Atmosphere</h3>
+              <p>
+                Thoughtfully arranged for quiet morning study sessions, focused laptop work with fast fiber Wi-Fi and power outlets, or warm conversations over lunch with friends.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Items Showcase (Popular Food and Drinks) -->
+      <section class="section-py featured-section reveal-section" style="background-color: var(--color-cream-warm);" aria-labelledby="featured-heading">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-tag">Guest Favorites</span>
+            <h2 id="featured-heading" class="section-title">Popular Food & Drinks</h2>
+            <p class="section-subtitle">
+              A curated preview of our community’s most-loved morning fuel, nourishing midday plates, and handcrafted sips.
+            </p>
+          </div>
+
+          <div class="menu-grid">
+            <!-- Item 1: Coffee -->
+            <article class="menu-card">
+              <div class="menu-card-image-wrap">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 450'%3E%3Crect width='100%25' height='100%25' fill='%23f3ecdf'/%3E%3C/svg%3E"
+                  data-src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=700&q=80"
+                  alt="Aura Signature Honey Oat Latte in ceramic cup with delicate latte art"
+                  class="menu-card-img lazy-image"
+                  loading="lazy"
+                />
+                <span class="badge badge-caramel menu-card-badge">Signature Sip</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3 class="menu-item-name">Honey Oat Latte</h3>
+                  <span class="menu-item-price">₮9,500</span>
+                </div>
+                <p class="menu-item-desc">
+                  Double shot of Colombian espresso, velvety steamed oat milk, infused with raw mountain honey and dusted with Ceylon cinnamon.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="badge badge-coffee">Coffee & Drinks</span>
+                  <a href="menu.html" class="btn btn-sm btn-secondary">Explore Menu</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 2: Breakfast -->
+            <article class="menu-card">
+              <div class="menu-card-image-wrap">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 450'%3E%3Crect width='100%25' height='100%25' fill='%23f3ecdf'/%3E%3C/svg%3E"
+                  data-src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=700&q=80"
+                  alt="Artisan avocado sourdough toast topped with soft poached organic egg"
+                  class="menu-card-img lazy-image"
+                  loading="lazy"
+                />
+                <span class="badge badge-green menu-card-badge">Chef's Pick</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3 class="menu-item-name">Avocado Sourdough</h3>
+                  <span class="menu-item-price">₮14,500</span>
+                </div>
+                <p class="menu-item-desc">
+                  Freshly mashed Haas avocado on naturally fermented rustic sourdough, topped with poached organic egg, chili flakes, and toasted hemp seeds.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="badge badge-coffee">Breakfast</span>
+                  <a href="menu.html" class="btn btn-sm btn-secondary">Explore Menu</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Item 3: Dessert -->
+            <article class="menu-card">
+              <div class="menu-card-image-wrap">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 700 450'%3E%3Crect width='100%25' height='100%25' fill='%23f3ecdf'/%3E%3C/svg%3E"
+                  data-src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=700&q=80"
+                  alt="Pistachio Basque Burnt Cheesecake slice with creamy center"
+                  class="menu-card-img lazy-image"
+                  loading="lazy"
+                />
+                <span class="badge badge-caramel menu-card-badge">Daily Bake</span>
+              </div>
+              <div class="menu-card-body">
+                <div class="menu-card-header">
+                  <h3 class="menu-item-name">Pistachio Cheesecake</h3>
+                  <span class="menu-item-price">₮12,500</span>
+                </div>
+                <p class="menu-item-desc">
+                  Deeply caramelized Basque exterior giving way to a rich, molten cream center infused with roasted Sicilian pistachios and sea salt.
+                </p>
+                <div class="menu-card-footer">
+                  <span class="badge badge-coffee">Desserts</span>
+                  <a href="menu.html" class="btn btn-sm btn-secondary">Explore Menu</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div style="text-align: center; margin-top: 3rem;">
+            <a href="menu.html" class="btn btn-primary">
+              View All 16 Menu Items
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Short Introduction to the Café Story -->
+      <section class="section-py story-section reveal-section" aria-labelledby="story-teaser-heading">
+        <div class="container">
+          <div class="story-split">
+            <div class="story-image-mosaic">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 900 600'%3E%3Crect width='100%25' height='100%25' fill='%23f3ecdf'/%3E%3C/svg%3E"
+                data-src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=80"
+                alt="Barista carefully pouring freshly steamed milk into coffee cup"
+                class="mosaic-main lazy-image"
+                loading="lazy"
+              />
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='100%25' height='100%25' fill='%23f3ecdf'/%3E%3C/svg%3E"
+                data-src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80"
+                alt="Table with hot coffee, notebook, and pastry"
+                class="mosaic-sub lazy-image"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="story-teaser-content">
+              <span class="section-tag">Our Story</span>
+              <h2 id="story-teaser-heading" class="section-title">A Gathering Place Built on Craft & Warmth</h2>
+              <p style="color: var(--color-text-muted); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.25rem;">
+                Aura was founded in 2021 with an earnest idea: that a neighborhood café should feel like an extension of your own living room—filled with good smells, honest ingredients, unpretentious hospitality, and a cup of coffee that genuinely brightens your morning.
+              </p>
+              <p style="color: var(--color-text-muted); font-size: 0.98rem; line-height: 1.7; margin-bottom: 2rem;">
+                Whether you need a quiet corner to write your thesis, a cozy booth to catch up with old friends, or a quick energizing flat white on your commute, we have a seat saved for you.
+              </p>
+              <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="about.html" class="btn btn-outline-green">Read Our Full Story</a>
+                <span style="font-size: 0.85rem; color: var(--color-text-light);">• Dedicated to sustainability & community</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Visually Attractive Promotional / Special Offer Section -->
+      <section class="promo-section reveal-section" aria-labelledby="promo-heading">
+        <div class="container">
+          <div class="promo-banner-card">
+            <div class="promo-content">
+              <span class="badge badge-caramel" style="margin-bottom: 1rem;">Limited Seasonal Special</span>
+              <h3 id="promo-heading">The Student & Coworker Morning Bundle</h3>
+              <p>
+                Fuel your focus every weekday morning from 7:30 AM to 11:00 AM. Pair any handcrafted coffee or matcha with our fresh butter croissant or avocado sourdough at a friendly community discount.
+              </p>
+              <div class="promo-perks">
+                <div class="promo-perk-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>High-speed fiber Wi-Fi</span>
+                </div>
+                <div class="promo-perk-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Plentiful laptop power outlets</span>
+                </div>
+                <div class="promo-perk-item">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Free warm water refills</span>
+                </div>
+              </div>
+              <a href="menu.html" class="btn btn-green">Check Morning Menu</a>
+            </div>
+
+            <div class="promo-badge-box">
+              <span class="promo-discount">20% OFF</span>
+              <span class="promo-label">Morning Pairing Bundle</span>
+              <p style="font-size: 0.78rem; color: #d0c1b4; margin-top: 0.75rem;">
+                Available Monday – Friday before 11:00 AM. Show student or work ID at register.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community Review / Target Audience Testimonials -->
+      <section class="section-py testimonials-section reveal-section" aria-labelledby="testimonials-heading">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-tag">Community Voices</span>
+            <h2 id="testimonials-heading" class="section-title">Why Neighbors Love Aura</h2>
+            <p class="section-subtitle">
+              Designed for everyone—from nearby university students and remote workers to weekend families.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div style="color: #c99757; margin-bottom: 0.75rem; display: flex; gap: 2px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p style="font-style: italic; margin-bottom: 1.25rem;">
+                “As a design student, this is my absolute go-to study spot. The lighting is soothing, the playlists are never harsh, and the Honey Oat Latte keeps me energized for hours.”
+              </p>
+              <div style="font-weight: 700; color: var(--color-espresso); font-size: 0.95rem;">Nomun B.</div>
+              <div style="font-size: 0.8rem; color: var(--color-text-light);">Architecture Student</div>
+            </div>
+
+            <div class="feature-card">
+              <div style="color: #c99757; margin-bottom: 0.75rem; display: flex; gap: 2px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p style="font-style: italic; margin-bottom: 1.25rem;">
+                “I work remotely three days a week from Aura. The internet connection is rock solid, seating has proper ergonomics, and the panini lunch is unbeatable value.”
+              </p>
+              <div style="font-weight: 700; color: var(--color-espresso); font-size: 0.95rem;">Temuulen E.</div>
+              <div style="font-size: 0.8rem; color: var(--color-text-light);">Software Engineer</div>
+            </div>
+
+            <div class="feature-card">
+              <div style="color: #c99757; margin-bottom: 0.75rem; display: flex; gap: 2px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <p style="font-style: italic; margin-bottom: 1.25rem;">
+                “Our family stops by every Sunday morning after the park. The staff are so warm with our toddler, and the Basque cheesecake is the best in Ulaanbaatar!”
+              </p>
+              <div style="font-weight: 700; color: var(--color-espresso); font-size: 0.95rem;">Khulan & Family</div>
+              <div style="font-size: 0.8rem; color: var(--color-text-light);">Neighborhood Residents</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Masonry Image Gallery Component (Café Interior & Signature Items) -->
+      <section class="gallery-section reveal-section" aria-labelledby="gallery-heading">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-tag">Visual Atmosphere</span>
+            <h2 id="gallery-heading" class="section-title">Moments at Aura</h2>
+            <p class="section-subtitle">
+              Take a visual stroll through our sunlit interior, artisan brew bar, daily morning bakes, and peaceful study nooks.
+            </p>
+          </div>
+
+          <!-- Interactive Category Filter Tabs -->
+          <div class="gallery-filter-tabs" role="tablist" aria-label="Gallery Filter">
+            <button class="tab-btn active" role="tab" aria-selected="true" data-filter="all">All Photos</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="interior">Café Interior</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="signature">Signature Coffee & Bites</button>
+            <button class="tab-btn" role="tab" aria-selected="false" data-filter="bakery">Artisan Bakery</button>
+          </div>
+
+          <!-- Masonry Grid -->
+          <div class="gallery-masonry" aria-label="Café photo gallery">
+            <!-- 1. Interior: Sunlit Main Dining Room -->
+            <figure
+              class="gallery-item"
+              data-category="interior"
+              data-full-src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85"
+              data-title="Sunlit Main Lounge"
+              data-caption="Natural daylight streaming across sustainable timber communal tables and botanicals."
+              data-tag="Interior Space"
+              tabindex="0"
+              role="button"
+              aria-label="View photo: Sunlit Main Lounge"
+            >
+              <div class="gallery-img-wrap">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='100%25' height='100%25' fill='%23f3ecdf'/%3E%3C/svg%3E"
+                  data-src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="Bright café dining room with minimalist tables and greenery"
+                  class="gallery-img lazy-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-expand-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                  </span>
+                  <span class="badge badge-coffee" style="align-self: flex-start; margin-bottom: 0.5rem; font-size: 0.72rem;">Interior Space</span>
+                  <h3 class="gallery-title">Sunlit Main Lounge</h3>
+                  <p class="gallery-caption">Natural daylight streaming across sustainable timber tables.</p>
+                </div>
+              </div>
+            </figure>
+
+            <!-- 2. Signature: Manual Chemex Pour-Over -->
+            <figure
+              class="gallery-item"
+              data-category="signature"
+              data-full-src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=85"
+              data-title="Single-Origin Pour Over"
+              data-caption="Barista precision pour over extraction highlighting floral Ethiopian Yirgacheffe notes."
+              data-tag="Signature Craft"
+              tabindex="0"
+              role="button"
+              aria-label="View photo: Single-Origin Pour Over"
+            >
+              <div class="gallery-img-wrap">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='100%25' height='100%25' fill='%23f3ecdf'/%3E%3C/svg%3E"
+                  data-src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="Barista carefully pouring hot water into a glass Chemex coffee maker"
+                  class="gallery-img lazy-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-expand-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                  </span>
+                  <span class="badge badge-caramel" style="align-self: flex-start; margin-bottom: 0.5rem; font-size: 0.72rem;">Signature Craft</span>
+                  <h3 class="gallery-title">Single-Origin Pour Over</h3>
+                  <p class="gallery-caption">Precision slow extraction with floral Ethiopian Yirgacheffe notes.</p>
+                </div>
+              </div>
+            </figure>
+
+            <!-- 3. Bakery: Fresh Morning Breads & Croissants -->
+            <figure
+              class="gallery-item"
+              data-category="bakery"
+              data-full-src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85"
+              data-title="Morning Bakery Counter"
+              data-caption="Fresh sourdough loaves and golden butter pastries baked every morning at 6:30 AM."
+              data-tag="Daily Bake"
+              tabindex="0"
+              role="button"
+              aria-label="View photo: Morning Bakery Counter"
+            >
+              <div class="gallery-img-wrap">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='100%25' height='100%25' fill='%23f3ecdf'/%3E%3C/svg%3E"
+                  data-src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="Freshly baked artisan sourdough loaves and pastries on bakery shelves"
+                  class="gallery-img lazy-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-expand-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                  </span>
+                  <span class="badge badge-coffee" style="align-self: flex-start; margin-bottom: 0.5rem; font-size: 0.72rem;">Daily Bake</span>
+                  <h3 class="gallery-title">Morning Bakery Counter</h3>
+                  <p class="gallery-caption">Fresh rustic sourdough and pastries baked from scratch daily.</p>
+                </div>
+              </div>
+            </figure>
+
+            <!-- 4. Interior: Window Reading Nook -->
+            <figure
+              class="gallery-item"
+              data-category="interior"
+              data-full-src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=1200&q=85"
+              data-title="Window Reading Nook"
+              data-caption="Comfortable leather armchairs beside wide glass panes for quiet afternoons."
+              data-tag="Cozy Corner"
+              tabindex="0"
+              role="button"
+              aria-label="View photo: Window Reading Nook"
+            >
+              <div class="gallery-img-wrap">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='100%25' height='100%25' fill='%23f3ecdf'/%3E%3C/svg%3E"
+                  data-src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="Cozy sunlit reading corner with leather armchair and coffee cup"
+                  class="gallery-img lazy-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-expand-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                  </span>
+                  <span class="badge badge-green" style="align-self: flex-start; margin-bottom: 0.5rem; font-size: 0.72rem;">Cozy Corner</span>
+                  <h3 class="gallery-title">Window Reading Nook</h3>
+                  <p class="gallery-caption">Armchairs and warm ambient light overlooking Peace Avenue.</p>
+                </div>
+              </div>
+            </figure>
+
+            <!-- 5. Signature: Rich Espresso Extraction -->
+            <figure
+              class="gallery-item"
+              data-category="signature"
+              data-full-src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=1200&q=85"
+              data-title="Golden Crema Espresso"
+              data-caption="Freshly pulled double shot showcasing thick honey crema and chocolate aromatics."
+              data-tag="Signature Craft"
+              tabindex="0"
+              role="button"
+              aria-label="View photo: Golden Crema Espresso"
+            >
+              <div class="gallery-img-wrap">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='100%25' height='100%25' fill='%23f3ecdf'/%3E%3C/svg%3E"
+                  data-src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="Espresso machine portafilter extracting rich golden coffee shot"
+                  class="gallery-img lazy-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-expand-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                  </span>
+                  <span class="badge badge-caramel" style="align-self: flex-start; margin-bottom: 0.5rem; font-size: 0.72rem;">Signature Craft</span>
+                  <h3 class="gallery-title">Golden Crema Espresso</h3>
+                  <p class="gallery-caption">Freshly pulled double shot with rich chocolate undertones.</p>
+                </div>
+              </div>
+            </figure>
+
+            <!-- 6. Interior: Study Mezzanine & Laptop Desks -->
+            <figure
+              class="gallery-item"
+              data-category="interior"
+              data-full-src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1200&q=85"
+              data-title="Study Mezzanine"
+              data-caption="Spacious seating with fast fiber Wi-Fi and power outlets for focused students and workers."
+              data-tag="Study & Work"
+              tabindex="0"
+              role="button"
+              aria-label="View photo: Study Mezzanine"
+            >
+              <div class="gallery-img-wrap">
+                <img
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='100%25' height='100%25' fill='%23f3ecdf'/%3E%3C/svg%3E"
+                  data-src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=800&h=600&q=80"
+                  alt="Café seating area with patrons conversing and working on laptops"
+                  class="gallery-img lazy-image"
+                  loading="lazy"
+                />
+                <div class="gallery-overlay">
+                  <span class="gallery-expand-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                  </span>
+                  <span class="badge badge-coffee" style="align-self: flex-start; margin-bottom: 0.5rem; font-size: 0.72rem;">Study & Work</span>
+                  <h3 class="gallery-title">Study Mezzanine</h3>
+                  <p class="gallery-caption">Quiet second-floor workspace equipped with high-speed internet.</p>
+                </div>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lightbox Modal Component -->
+      <div id="gallery-lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Photo Lightbox">
+        <div class="lightbox-content">
+          <button id="lightbox-close-btn" class="lightbox-close-btn" aria-label="Close photo view">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <div class="lightbox-img-wrap">
+            <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+          </div>
+          <div class="lightbox-caption-box">
+            <div>
+              <span id="lightbox-tag" class="badge badge-caramel" style="font-size: 0.72rem; margin-bottom: 0.35rem; display: inline-block;">Aura Moment</span>
+              <h3 id="lightbox-title" style="font-family: var(--font-serif); font-size: 1.25rem; color: #fff; margin-bottom: 0.2rem;">Photo Title</h3>
+              <p id="lightbox-caption" style="font-size: 0.88rem; color: #cfbfb2;">Detailed photo description</p>
+            </div>
+            <a href="menu.html" class="btn btn-sm btn-green" style="white-space: nowrap;">Explore Menu</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Floating Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top of page">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </button>
+
+    <!-- Site Footer -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Col 1: Brand Info -->
+          <div class="footer-brand">
+            <a href="index.html" class="brand-logo">
+              <div class="brand-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                </svg>
+              </div>
+              <div>
+                Aura
+                <span class="brand-tag">Artisan Café</span>
+              </div>
+            </a>
+            <p>
+              Honest coffee, seasonal nourishment, and a peaceful community atmosphere in the heart of the city.
+            </p>
+            <div class="social-links" aria-label="Social Media Links">
+              <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 2: Navigation Links -->
+          <div>
+            <h4 class="footer-col-title">Navigation</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Our Café</a></li>
+              <li><a href="menu.html">Full Menu & Pricing</a></li>
+              <li><a href="contact.html">Contact & Location</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Hours Summary -->
+          <div>
+            <h4 class="footer-col-title">Opening Hours</h4>
+            <ul class="footer-hours-list">
+              <li><strong>Mon – Thu:</strong> 07:30 – 20:30</li>
+              <li><strong>Friday:</strong> 07:30 – 21:30</li>
+              <li><strong>Saturday:</strong> 08:30 – 21:30</li>
+              <li><strong>Sunday:</strong> 09:00 – 19:00</li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Location & Contact -->
+          <div>
+            <h4 class="footer-col-title">Visit Us</h4>
+            <p style="font-size: 0.88rem; line-height: 1.5; color: #bfada0; margin-bottom: 0.75rem;">
+              📍 Peace Avenue 42, Sukhbaatar District<br />
+              Ulaanbaatar, Mongolia (Sample Location)
+            </p>
+            <p style="font-size: 0.88rem; color: #bfada0; margin-bottom: 0.5rem;">
+              📞 +976 7700-2233 [Sample]
+            </p>
+            <p style="font-size: 0.88rem; color: #bfada0;">
+              ✉️ hello@auracafe.sample
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© <span id="current-year">2026</span> Aura Artisan Café. All rights reserved.</p>
+          <p class="footer-disclaimer">
+            * Demonstration website with editable sample data developed to specification.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
